@@ -136,7 +136,8 @@ NSUInteger DeviceSystemMajorVersion() {
         value = MIN(value, _lowerMaximumValue);
     }
     
-    value = MIN(value, _upperValue - _minimumRange);
+    //Remove from Atcom SA
+    //value = MIN(value, _upperValue - _minimumRange);
     
     _lowerValue = value;
     
